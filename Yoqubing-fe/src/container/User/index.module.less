@@ -1,0 +1,42 @@
+@import "../../resource/default.module.less";
+
+.whole {
+  display: flex;
+  flex: 1;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+
+  .info {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .items {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 20em;
+      margin-top: .5em;
+      background-color: rgba(255, 255, 255, .5);
+      padding: 1em 1.5em;
+      border-radius: 1em;
+      box-shadow: 0 0 .5em -.3em rgba(0, 0, 0, .5);
+      transition: @default-transition;
+    }
+  
+    .items:hover {
+      box-shadow: 0 0 .5em 0em rgba(0, 0, 0, .8);
+    }
+  
+    .button {
+      justify-content: center;
+      cursor: pointer;
+      margin-top: 1.5em;
+      background-color: rgba(255, 255, 255, .7);
+    }
+  }
+}

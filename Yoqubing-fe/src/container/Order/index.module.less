@@ -1,0 +1,59 @@
+@import "../../resource/default.module.less";
+
+.whole {
+  display: flex;
+  flex: none;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+
+  .orderBox {
+    display: flex;
+    flex: none;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2em;
+    width: 28%;
+    transition: @default-transition;
+    cursor: pointer;
+
+    div {
+      width: 100%;
+    }
+    
+    .title {
+      font-size: 2em;
+    }
+
+    .name {
+      font-size: 1em;
+      margin-top: 2em;
+    }
+
+    .time {
+      font-size: 1em;
+    }
+
+    .content {
+      margin-top: 1em;
+      font-size: 1em;
+      color: #777777;
+    }
+  }
+
+  .editBox {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .orderBox:hover {
+    background-color: rgba(255, 255, 255, .6);
+    box-shadow: 0 0 2em 0em rgba(0, 0, 0, .6);
+  }
+
+  .viewing {
+    cursor: default;
+  }
+}

@@ -1,0 +1,26 @@
+@import "../../../resource/default.module.less";
+
+.navButton {
+  width: 4em;
+  height: 4em;
+  margin: .5em 1em;
+  border-radius: 2em;
+  cursor: pointer;
+  display: flex;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  transition: @default-transition;
+}
+
+.navButton:hover {
+  background-color: rgba(255, 255, 255, .5);
+  box-shadow: 0 0 2em 0em rgba(0, 0, 0, .9);
+  transform: scale(1.1);
+}
+
+.activeButton, .activeButton:hover {
+  background-color: rgba(255, 255, 255, .5);
+  box-shadow: 0 0 2em 0em rgba(0, 0, 0, .9);
+  transform: scale(1.2);
+}
